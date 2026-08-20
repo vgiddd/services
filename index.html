@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Сайты под ключ — разработка и обслуживание</title>
+<meta name="description" content="Прайс на разработку сайтов и ежемесячное обслуживание: пакеты, стоимость доработок, что входит и сроки.">
+<meta name="theme-color" content="#C2551E" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12161C" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Сайты под ключ — разработка и обслуживание">
+<meta property="og:description" content="Прайс: разработка, годовой пакет, тарифы обслуживания и стоимость доработок.">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C2551E'/%3E%3Cpath d='M9 21l5-10 5 10M11.5 17.5h5' stroke='%23fff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600;700;800&family=Onest:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --accent: #C2551E;
+    --accent-soft: #F6E6DA;
+    --ink: #141A22;
+    --ink-2: #5C6874;
+    --ink-3: #8D98A3;
+    --paper: #F4F5F6;
+    --card: #FFFFFF;
+    --line: #DFE3E7;
+    --ok: #1C6B57;
+    --r: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --accent: #F0803F;
+      --accent-soft: #33231A;
+      --ink: #ECEFF2;
+      --ink-2: #98A3AE;
+      --ink-3: #6A757F;
+      --paper: #12161C;
+      --card: #191F26;
+      --line: #29313A;
+      --ok: #58BFA3;
+    }
+  }
+  :root[data-theme="dark"] {
+    --accent: #F0803F;
+    --accent-soft: #33231A;
+    --ink: #ECEFF2;
+    --ink-2: #98A3AE;
+    --ink-3: #6A757F;
+    --paper: #12161C;
+    --card: #191F26;
+    --line: #29313A;
+    --ok: #58BFA3;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Onest", system-ui, sans-serif; font-size: 16px; line-height: 1.6;
+  }
+  h1, h2, h3 { font-family: "Wix Madefor Display", system-ui, sans-serif; margin: 0;
+               letter-spacing: -.025em; text-wrap: balance; overflow-wrap: break-word; }
+  p { margin: 0; }
+  a { color: var(--accent); }
+  img, svg { max-width: 100%; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  .wrap { width: 100%; max-width: 900px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 28px); }
+  section { padding: clamp(40px, 5vw, 64px) 0; scroll-margin-top: 68px; }
+  .label { font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+  h2 { font-size: clamp(21px, 1.2vw + 16px, 28px); font-weight: 700; margin-top: 8px; }
+  .note { color: var(--ink-2); font-size: 15px; margin-top: 10px; max-width: 62ch; }
+
+  /* шапка */
+  header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--paper) 90%, transparent);
+           backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .bar { display: flex; align-items: center; gap: 20px; height: 60px; }
+  .mark { display: flex; align-items: center; gap: 9px; font-family: "Wix Madefor Display", sans-serif;
+          font-weight: 700; font-size: 15px; text-decoration: none; color: var(--ink); margin-right: auto; }
+  .mark i { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 7px;
+            background: var(--accent); color: #fff; font-style: normal; font-size: 15px; }
+  .bar nav { display: flex; gap: 18px; font-size: 14px; }
+  .bar nav a { color: var(--ink-2); text-decoration: none; }
+  .bar nav a:hover { color: var(--accent); }
+  @media (max-width: 720px) {
+    .bar { height: auto; padding-top: 10px; padding-bottom: 8px; flex-wrap: wrap; gap: 8px 14px; }
+    .mark { margin-right: 0; width: 100%; }
+    .bar nav { width: 100%; gap: 14px; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; }
+    .bar nav a { white-space: nowrap; }
+    section { scroll-margin-top: 104px; }
+  }
+
+  /* первый экран */
+  .hero { padding-top: clamp(36px, 5vw, 72px); padding-bottom: clamp(28px, 3vw, 40px); }
+  h1 { font-size: clamp(28px, 3vw + 14px, 46px); font-weight: 800; line-height: 1.08; max-width: 18ch; }
+  h1 span { color: var(--accent); }
+  .hero p { margin-top: 18px; color: var(--ink-2); font-size: clamp(16px, .3vw + 15px, 18px); max-width: 56ch; }
+  .quick { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .chip { display: inline-flex; align-items: baseline; gap: 7px; background: var(--card); border: 1px solid var(--line);
+          border-radius: 100px; padding: 8px 15px; font-size: 14px; }
+  .chip b { font-family: "Wix Madefor Display", sans-serif; font-size: 15px; }
+
+  /* строки прайса */
+  .sheet { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; margin-top: 18px; }
+  .line { display: flex; align-items: baseline; gap: 14px; padding: 15px 20px; border-bottom: 1px solid var(--line); }
+  .line:last-child { border-bottom: none; }
+  .line .t { flex: 1 1 auto; min-width: 0; }
+  .line .t b { display: block; font-weight: 600; }
+  .line .t span { display: block; font-size: 14px; color: var(--ink-2); margin-top: 2px; }
+  .line .p { flex: 0 0 auto; margin-left: auto; font-family: "Wix Madefor Display", sans-serif;
+             font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .line.head { background: var(--accent-soft); }
+  .line.head b { color: var(--accent); }
+  .line.head .p { color: var(--accent); }
+
+  /* годовой пакет */
+  .deal { margin-top: 18px; background: var(--card); border: 1px solid var(--accent); border-radius: var(--r); overflow: hidden; }
+  .deal .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; padding: 20px 22px 16px; }
+  .deal h3 { font-size: 19px; font-weight: 700; }
+  .deal .sum { margin-left: auto; font-family: "Wix Madefor Display", sans-serif; font-size: 26px;
+               font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .deal ul { margin: 0; padding: 0 22px 20px; list-style: none; display: grid; gap: 8px; font-size: 15px; }
+  .deal li { display: flex; gap: 9px; }
+  .deal li::before { content: ""; flex: 0 0 auto; width: 6px; height: 6px; margin-top: 9px; border-radius: 50%; background: var(--accent); }
+  .deal .after { padding: 14px 22px; border-top: 1px solid var(--line); font-size: 14px; color: var(--ink-2); background: var(--paper); }
+
+  /* тарифы */
+  .plans { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin-top: 18px; align-items: start; }
+  .plan { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 20px 18px; }
+  .plan.pick { border-color: var(--accent); position: relative; }
+  .plan .tag { position: absolute; top: -10px; left: 18px; background: var(--accent); color: #fff; font-size: 10px;
+               font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 3px 9px; border-radius: 100px; }
+  .plan h3 { font-size: 15px; font-weight: 700; }
+  .plan .price { font-family: "Wix Madefor Display", sans-serif; font-size: 23px; font-weight: 800; margin: 8px 0 0;
+                 font-variant-numeric: tabular-nums; }
+  .plan .per { font-size: 13px; color: var(--ink-2); }
+  .plan ul { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 14px; }
+  .plan li { display: flex; gap: 8px; }
+  .plan li::before { content: ""; flex: 0 0 auto; width: 5px; height: 5px; margin-top: 8px; border-radius: 50%; background: var(--ink-3); }
+  .plan.pick li::before { background: var(--accent); }
+
+  /* включено / не включено */
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+  .two > div { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px; }
+  .two h3 { font-size: 13px; font-family: "Onest", sans-serif; font-weight: 600; text-transform: uppercase;
+            letter-spacing: .1em; color: var(--ink-2); margin-bottom: 10px; }
+  .two ul { margin: 0; padding-left: 18px; display: grid; gap: 7px; font-size: 15px; }
+  .two .out li { color: var(--ink-2); }
+
+  /* шаги */
+  .steps { list-style: none; margin: 18px 0 0; padding: 0; counter-reset: s; display: grid; gap: 12px; }
+  .steps li { display: flex; gap: 13px; counter-increment: s; }
+  .steps li::before { content: counter(s); flex: 0 0 auto; width: 25px; height: 25px; border-radius: 7px;
+    background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; display: grid; place-items: center; margin-top: 2px; }
+  .steps b { display: block; }
+  .steps span { color: var(--ink-2); font-size: 15px; }
+
+  .callout { margin-top: 18px; background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--ok);
+             border-radius: var(--r); padding: 16px 20px; font-size: 15px; }
+  .callout b { color: var(--ok); }
+
+  /* работы */
+  .works { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin-top: 18px; }
+  .work { display: block; background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+          padding: 16px 18px; text-decoration: none; color: inherit; transition: border-color .18s, transform .18s; }
+  .work:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .work b { display: block; font-family: "Wix Madefor Display", sans-serif; font-size: 15px; }
+  .work span { font-size: 13px; color: var(--ink-2); }
+  .work em { display: block; font-style: normal; font-size: 13px; color: var(--accent); margin-top: 8px; }
+
+  /* контакты */
+  footer { border-top: 1px solid var(--line); padding: 32px 0 44px; margin-top: 24px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 18px 40px; align-items: flex-end; justify-content: space-between; }
+  .contact .who { font-family: "Wix Madefor Display", sans-serif; font-weight: 700; font-size: 18px; }
+  .contact p { color: var(--ink-2); font-size: 15px; }
+  .contact .links { display: grid; gap: 4px; font-size: 15px; }
+
+  @media (max-width: 760px) {
+    .plans, .two, .works { grid-template-columns: 1fr; }
+    .plan.pick { margin-top: 10px; }
+    .line { padding: 14px 16px; gap: 10px; }
+    .deal .top { padding: 18px 18px 14px; }
+    .deal .sum { font-size: 23px; }
+    .deal ul { padding: 0 18px 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="#top"><i>V</i>Сайты под ключ</a>
+    <nav>
+      <a href="#build">Разработка</a>
+      <a href="#care">Обслуживание</a>
+      <a href="#extra">Доработки</a>
+      <a href="#how">Как работаем</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <p class="label">Прайс · действует с августа 2026</p>
+    <h1>Сайт, который <span>не бросают</span> после сдачи</h1>
+    <p>Делаю сайты малому бизнесу и веду их дальше: хостинг, домен, правки цен и текстов — на моей стороне. Клиенту не нужен ни программист в штате, ни отдельный подрядчик по мелочам.</p>
+    <div class="quick">
+      <span class="chip">Запуск от <b class="num">79 000 ₽</b></span>
+      <span class="chip">Обслуживание от <b class="num">4 900 ₽/мес</b></span>
+      <span class="chip">Срок <b>5 рабочих дней</b></span>
+    </div>
+  </div>
+
+  <section id="build">
+    <div class="wrap">
+      <p class="label">Разработка</p>
+      <h2>Сколько стоит сделать сайт</h2>
+      <p class="note">Цены конечные: дизайн, вёрстка, тексты и настройка входят. Оплата 50% в начале, 50% после приёмки.</p>
+
+      <div class="sheet">
+        <div class="line">
+          <div class="t"><b>Одностраничный сайт</b><span>Экран-обложка, услуги, прайс с поиском, форма заявки, контакты. Телефон, планшет, компьютер.</span></div>
+          <div class="p num">от 79 000 ₽</div>
+        </div>
+        <div class="line">
+          <div class="t"><b>Сайт-визитка, 3–5 страниц</b><span>Отдельные страницы под услуги, врачей или товары, единая навигация.</span></div>
+          <div class="p num">от 120 000 ₽</div>
+        </div>
+        <div class="line">
+          <div class="t"><b>Переделка существующего сайта</b><span>Адаптив, скорость, новый дизайн на готовой структуре.</span></div>
+          <div class="p num">от 40 000 ₽</div>
+        </div>
+        <div class="line">
+          <div class="t"><b>Лендинг под рекламу</b><span>Одна услуга, один оффер, форма и цели в аналитике.</span></div>
+          <div class="p num">от 45 000 ₽</div>
+        </div>
+      </div>
+
+      <div class="deal">
+        <div class="top">
+          <h3>Годовой пакет «под ключ»</h3>
+          <div class="sum num">189 000 ₽</div>
+        </div>
+        <ul>
+          <li>Разработка и запуск одностраничного сайта</li>
+          <li>12 месяцев обслуживания по тарифу «Рабочий»</li>
+          <li>Хостинг, домен, SSL-сертификат и почта на домене — внутри пакета</li>
+          <li>Приём заявок в Telegram, аналитика, карты, юридические страницы</li>
+        </ul>
+        <div class="after">Отдельно это стоило бы 197 800 ₽. Со второго года — 118 800 ₽ за 12 месяцев обслуживания.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="care">
+    <div class="wrap">
+      <p class="label">Обслуживание</p>
+      <h2>Ежемесячные тарифы</h2>
+      <p class="note">Хостинг, домен и сертификат оплачиваю я — они входят в любой тариф. Оплата помесячно, отказаться можно в любой месяц.</p>
+
+      <div class="plans">
+        <div class="plan">
+          <h3>Базовый</h3>
+          <div class="price num">4 900 ₽</div>
+          <div class="per">в месяц</div>
+          <ul>
+            <li>Хостинг, домен, SSL</li>
+            <li>До 5 правок в месяц</li>
+            <li>Резервные копии</li>
+            <li>Контроль доступности</li>
+          </ul>
+        </div>
+        <div class="plan pick">
+          <span class="tag">Берут чаще</span>
+          <h3>Рабочий</h3>
+          <div class="price num">9 900 ₽</div>
+          <div class="per">в месяц</div>
+          <ul>
+            <li>Всё из базового</li>
+            <li>Правки текстов и цен без ограничений, в течение суток</li>
+            <li>2 контентные правки в месяц: акция, новый сотрудник, новый блок</li>
+            <li>Отчёт: сколько заявок и откуда</li>
+            <li>Ответ в мессенджере в рабочий день</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>С продвижением</h3>
+          <div class="price num">24 900 ₽</div>
+          <div class="per">в месяц</div>
+          <ul>
+            <li>Всё из рабочего</li>
+            <li>SEO-работы по запросам услуг</li>
+            <li>2 новые страницы в месяц</li>
+            <li>Работа с отзывами на картах</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="extra">
+    <div class="wrap">
+      <p class="label">Доработки</p>
+      <h2>Разовые работы вне тарифа</h2>
+      <p class="note">Считаю по факту. Если работа занимает меньше часа и вы на обслуживании — делаю бесплатно.</p>
+
+      <div class="sheet">
+        <div class="line head"><div class="t"><b>Час работы</b></div><div class="p num">2 000 ₽</div></div>
+        <div class="line"><div class="t"><b>Форма заявок в Telegram</b><span>Бот, серверный обработчик, защита от спама.</span></div><div class="p num">8 000 ₽</div></div>
+        <div class="line"><div class="t"><b>Политика обработки данных и согласие</b><span>Страница, чекбокс в форме, требования 152-ФЗ.</span></div><div class="p num">6 000 ₽</div></div>
+        <div class="line"><div class="t"><b>Яндекс.Метрика с целями</b><span>Счётчик, цели на заявку и открытие прайса, доступ владельцу.</span></div><div class="p num">5 000 ₽</div></div>
+        <div class="line"><div class="t"><b>Карточка в Яндекс.Бизнесе и на Картах</b><span>Заполнение, фото, категории, разметка организации на сайте.</span></div><div class="p num">6 000 ₽</div></div>
+        <div class="line"><div class="t"><b>Новая страница услуги с SEO-текстом</b><span>Структура, текст, мета-теги, перелинковка.</span></div><div class="p num">7 000 ₽</div></div>
+        <div class="line"><div class="t"><b>Перенос сайта на другой хостинг</b><span>Файлы, почта, домен, сертификат — без простоя.</span></div><div class="p num">5 000 ₽</div></div>
+        <div class="line"><div class="t"><b>Срочные работы</b><span>В выходной или со сдачей в течение суток.</span></div><div class="p">×1,5 к цене</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="scope">
+    <div class="wrap">
+      <p class="label">Границы работ</p>
+      <h2>Что входит всегда, а что — нет</h2>
+      <div class="two">
+        <div>
+          <h3>Входит в любую разработку</h3>
+          <ul>
+            <li>Адаптив: телефон, планшет, компьютер</li>
+            <li>Светлая и тёмная тема</li>
+            <li>Скорость загрузки и базовое SEO</li>
+            <li>SSL-сертификат и защищённое соединение</li>
+            <li>Все доступы передаю заказчику</li>
+            <li>Исходники остаются у заказчика навсегда</li>
+          </ul>
+        </div>
+        <div class="out">
+          <h3>Не входит</h3>
+          <ul>
+            <li>Фото- и видеосъёмка — работаю с вашими материалами</li>
+            <li>Настройка и бюджет рекламы в Директе</li>
+            <li>Юридическая экспертиза текстов — шаблоны даю, утверждает ваш юрист</li>
+            <li>Наполнение каталога товарами вручную</li>
+            <li>Ведение соцсетей</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <p class="label">Порядок</p>
+      <h2>Как проходит работа</h2>
+      <ol class="steps">
+        <li><div><b>Разговор и смета</b><span>Обсуждаем задачу, фиксирую состав работ и цену. Она не меняется по ходу.</span></div></li>
+        <li><div><b>Материалы и предоплата</b><span>Забираю прайс, фото, реквизиты. 50% — старт работ.</span></div></li>
+        <li><div><b>Сборка</b><span>5 рабочих дней с момента получения материалов. Показываю промежуточный результат.</span></div></li>
+        <li><div><b>Запуск и передача</b><span>Домен, хостинг, проверка на устройствах, доступы. Остаток оплаты.</span></div></li>
+        <li><div><b>Обслуживание</b><span>Дальше — по выбранному тарифу. Пишете в мессенджер, правки в течение суток.</span></div></li>
+      </ol>
+      <div class="callout"><b>Гарантия 14 дней.</b> Если после запуска результат не устраивает — возвращаю оплату за разработку и передаю исходники. Обслуживание останавливается в любой месяц, домен и сайт остаются у заказчика.</div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="wrap">
+      <p class="label">Работы</p>
+      <h2>Что уже сделано</h2>
+      <div class="works">
+        <a class="work" href="https://vgiddd.github.io/vita-site/" target="_blank" rel="noopener">
+          <b>Vita Dental clinic</b><span>Стоматология: прайс на 105 услуг с поиском по названию, запись на приём.</span><em>Смотреть →</em>
+        </a>
+        <a class="work" href="https://github.com/vgiddd" target="_blank" rel="noopener">
+          <b>Другие проекты</b><span>Магазин, сайты услуг, персональные страницы.</span><em>Смотреть на GitHub →</em>
+        </a>
+        <div class="work">
+          <b>Ваш проект</b><span>Расскажите задачу — скажу срок и цену в тот же день.</span><em>Пишите в Telegram</em>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap contact">
+    <div>
+      <div class="who">Вагид</div>
+      <p>Разработка и обслуживание сайтов</p>
+    </div>
+    <div class="links">
+      <div>Telegram: <a href="#">@__________</a></div>
+      <div>Телефон: <a href="#">+7 (___) ___-__-__</a></div>
+      <div>Почта: <a href="#">______@______</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
