@@ -204,6 +204,11 @@
       </div>
       <div class="q"><label for="f10">Ссылка на облако с фотографиями</label><input type="url" id="f10" placeholder="Яндекс.Диск, Google Drive"></div>
       <div class="q">
+        <label for="f14">Исходник логотипа, если сохранился</label>
+        <span class="hint">Логотип вы прислали картинкой — я перерисовал его вручную. Если найдётся файл .ai, .eps, .svg или .cdr, знак будет точным.</span>
+        <input type="text" id="f14" placeholder="Есть / нет / поищем">
+      </div>
+      <div class="q">
         <span class="lab">Нужна ли фотосъёмка</span>
         <div class="radios">
           <label><input type="radio" name="shoot" value="не нужна"> Нет, своих хватит</label>
@@ -214,50 +219,44 @@
     </fieldset>
 
     <fieldset>
-      <legend>5. Прайс</legend>
+      <legend>5. Расценки на процедуры</legend>
       <div class="q">
-        <span class="lab">Цены в присланном прайсе актуальны</span>
+        <span class="lab">Пришлите файл с расценками</span>
+        <span class="hint">Excel, Word, PDF или просто фотографии страниц — подойдёт любой формат. Отправьте в переписку или ссылкой на облако.</span>
+        <input type="url" id="f11b" placeholder="Ссылка на файл с прайсом">
+      </div>
+      <div class="q">
+        <span class="lab">Прайс, который вы присылали раньше</span>
         <div class="radios">
-          <label><input type="radio" name="prices" value="актуальны"> Да, всё верно</label>
-          <label><input type="radio" name="prices" value="есть изменения"> Есть изменения</label>
+          <label><input type="radio" name="prices" value="актуален"> Актуален, цены те же</label>
+          <label><input type="radio" name="prices" value="есть изменения"> Есть изменения — пришлём новый</label>
         </div>
       </div>
-      <div class="q"><label for="f11">Если есть изменения — какие</label><textarea id="f11"></textarea></div>
-      <div class="q"><label for="f12">Страница 3 вашего PDF (коронки и вкладки) в макет не попала — пришлите цены оттуда</label><textarea id="f12"></textarea></div>
+      <div class="q"><label for="f12">В присланном PDF не было страницы 3 — коронки и вкладки. Пришлите цены оттуда</label><textarea id="f12"></textarea></div>
       <div class="q"><label for="f13">Как часто меняются цены</label><input type="text" id="f13" placeholder="Раз в квартал, раз в год…"></div>
     </fieldset>
 
     <fieldset>
-      <legend>6. Логотип и стиль</legend>
+      <legend>6. Тексты для сайта</legend>
       <div class="q">
-        <span class="lab">Исходник логотипа</span>
-        <span class="hint">В макете логотип перерисован по картинке из прайса — это приближение. С исходником он будет точным.</span>
+        <span class="lab">Кто пишет тексты</span>
         <div class="radios">
-          <label><input type="radio" name="logo" value="есть вектор"> Есть вектор (.ai, .eps, .svg, .cdr)</label>
-          <label><input type="radio" name="logo" value="только картинка"> Только картинка</label>
-          <label><input type="radio" name="logo" value="поищем"> Не знаем, поищем</label>
+          <label><input type="radio" name="text" value="пишет разработчик"> Напишите вы, мы проверим</label>
+          <label><input type="radio" name="text" value="пришлём свои"> Пришлём свои готовые тексты</label>
+          <label><input type="radio" name="text" value="вместе"> Вместе: мы дадим факты, вы сформулируете</label>
         </div>
       </div>
-      <div class="q"><label for="f14">Фирменные цвета и шрифты, если есть</label><input type="text" id="f14"></div>
-    </fieldset>
-
-    <fieldset>
-      <legend>7. Тексты</legend>
       <div class="q">
-        <span class="lab">Тексты про лечение я написал сам — их стоит проверить врачу</span>
-        <div class="radios">
-          <label><input type="radio" name="text" value="проверим и утвердим"> Проверим и утвердим</label>
-          <label><input type="radio" name="text" value="перепишем по-своему"> Перепишем по-своему</label>
-          <label><input type="radio" name="text" value="оставляем как есть"> Оставляем как есть</label>
-        </div>
+        <label for="f15">Если тексты пишу я — кто из врачей их вычитает</label>
+        <span class="hint">Тексты про лечение должен проверить врач: это медицина, а не реклама.</span>
+        <input type="text" id="f15">
       </div>
-      <div class="q"><label for="f15">Кто из врачей вычитает тексты</label><input type="text" id="f15"></div>
-      <div class="q"><label for="f16">Что обязательно сказать о клинике</label><textarea id="f16" placeholder="Оборудование, подход, чем гордитесь"></textarea></div>
+      <div class="q"><label for="f16">Что обязательно сказать о клинике</label><textarea id="f16" placeholder="Оборудование, подход к пациентам, чем гордитесь"></textarea></div>
       <div class="q"><label for="f17">Формулировки, которых быть не должно</label><input type="text" id="f17"></div>
     </fieldset>
 
     <fieldset>
-      <legend>8. Вопросы пациентов</legend>
+      <legend>7. Вопросы пациентов</legend>
       <div class="q">
         <label for="f18">5–7 вопросов, которые чаще всего задают по телефону</label>
         <span class="hint">Вынесем их на сайт с ответами — станет меньше звонков «просто уточнить».</span>
@@ -266,7 +265,7 @@
     </fieldset>
 
     <fieldset>
-      <legend>9. Домен</legend>
+      <legend>8. Домен</legend>
       <div class="q">
         <span class="lab">Домен</span>
         <div class="radios">
@@ -278,7 +277,7 @@
     </fieldset>
 
     <fieldset>
-      <legend>10. Что добавить к макету</legend>
+      <legend>9. Что добавить к макету</legend>
       <div class="q">
         <span class="lab">Отметьте нужное</span>
         <div class="checks">
@@ -296,7 +295,7 @@
     </fieldset>
 
     <fieldset>
-      <legend>11. Сроки, бюджет и согласование</legend>
+      <legend>10. Сроки, бюджет и согласование</legend>
       <div class="q"><label for="f21">К какой дате хотите запустить сайт</label><input type="text" id="f21" placeholder="Месяц или конкретная дата"></div>
       <div class="q"><label for="f22">Есть ли привязка к событию</label><input type="text" id="f22" placeholder="Открытие, сезон, запуск рекламы"></div>
       <div class="q">
