@@ -141,10 +141,32 @@
     </fieldset>
 
     <fieldset>
-      <legend>3. Врачи</legend>
+      <legend>3. Врачи на сайте</legend>
+      <div class="q">
+        <span class="lab">Нужен ли на сайте раздел о врачах</span>
+        <div class="radios">
+          <label><input type="radio" name="docs" value="да, с фото и опытом"> Да, с фотографиями, образованием и стажем</label>
+          <label><input type="radio" name="docs" value="да, только имена и специальности"> Да, но коротко: имена и специальности</label>
+          <label><input type="radio" name="docs" value="не нужен"> Нет, раздел не нужен</label>
+          <label><input type="radio" name="docs" value="пока не решили"> Пока не решили</label>
+        </div>
+      </div>
+      <div class="q">
+        <span class="lab">Если раздел нужен — что показываем о каждом враче</span>
+        <div class="checks">
+          <label><input type="checkbox" name="docinfo" value="Фотография"> Фотография</label>
+          <label><input type="checkbox" name="docinfo" value="Специальность"> Специальность</label>
+          <label><input type="checkbox" name="docinfo" value="Образование"> Образование и вуз</label>
+          <label><input type="checkbox" name="docinfo" value="Стаж"> Стаж работы</label>
+          <label><input type="checkbox" name="docinfo" value="Курсы и сертификаты"> Курсы и сертификаты</label>
+          <label><input type="checkbox" name="docinfo" value="С чем работает"> С какими случаями работает</label>
+          <label><input type="checkbox" name="docinfo" value="Стоимость приёма"> Стоимость приёма</label>
+          <label><input type="checkbox" name="docinfo" value="Кнопка записи к врачу"> Кнопка «Записаться к врачу»</label>
+        </div>
+      </div>
       <div class="q">
         <label for="f9">Список врачей</label>
-        <span class="hint">По каждому: фамилия имя отчество · специальность · образование · стаж · две-три строки о нём. Каждый врач с новой строки.</span>
+        <span class="hint">По каждому: фамилия имя отчество · специальность · образование · стаж · пара строк о нём. Каждый врач с новой строки. Можно прислать отдельным файлом.</span>
         <textarea id="f9" style="min-height:150px" placeholder="Иванова Мария Петровна · врач-ортодонт · СПбГМУ, 2012 · стаж 13 лет · ведёт брекеты и элайнеры"></textarea>
       </div>
       <div class="q">
@@ -161,7 +183,16 @@
     <fieldset>
       <legend>4. Фотографии клиники</legend>
       <div class="q">
-        <span class="lab">Какие фото уже есть</span>
+        <span class="lab">Нужны ли на сайте фотографии клиники</span>
+        <div class="radios">
+          <label><input type="radio" name="clinicphoto" value="да, нужны"> Да, нужны</label>
+          <label><input type="radio" name="clinicphoto" value="нет, обойдёмся"> Нет, обойдёмся без них</label>
+          <label><input type="radio" name="clinicphoto" value="пока не решили"> Пока не решили</label>
+        </div>
+      </div>
+      <div class="q">
+        <span class="lab">Если нужны — что у вас уже есть</span>
+        <span class="hint">Отметьте и пришлите файлы в переписку или ссылкой на облако.</span>
         <div class="checks">
           <label><input type="checkbox" name="photo" value="Кабинеты"> Кабинеты</label>
           <label><input type="checkbox" name="photo" value="Ресепшн и холл"> Ресепшн и холл</label>
@@ -171,6 +202,7 @@
           <label><input type="checkbox" name="photo" value="Вход и вывеска"> Вход и вывеска</label>
         </div>
       </div>
+      <div class="q"><label for="f10">Ссылка на облако с фотографиями</label><input type="url" id="f10" placeholder="Яндекс.Диск, Google Drive"></div>
       <div class="q">
         <span class="lab">Нужна ли фотосъёмка</span>
         <div class="radios">
@@ -179,7 +211,6 @@
           <label><input type="radio" name="shoot" value="обсудим"> Обсудим</label>
         </div>
       </div>
-      <div class="q"><label for="f10">Ссылка на облако с фотографиями</label><input type="url" id="f10" placeholder="Яндекс.Диск, Google Drive"></div>
     </fieldset>
 
     <fieldset>
